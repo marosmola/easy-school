@@ -1,4 +1,4 @@
-name: Example workflow for Codecov
+name: Calculate coverage for Codecov
 on: push
 jobs:
   run:
