@@ -1,6 +1,8 @@
 # Create your views here.
 from django.contrib import messages
-from django.contrib.auth.models import User, auth
+from django.contrib.auth.models import User
+from django.contrib.auth import authenticate, login
+
 from django.shortcuts import redirect, render
 from django.urls import reverse_lazy
 from django.views.generic import CreateView
@@ -15,9 +17,9 @@ def login(request):
     if request.method == 'POST':
         username = request.POST['username']
         password = request.POST['password']
-        user = auth.authenticate(username=username, password1=password)
+        user = authenticate(request, username=username, password=password)
         if user is not None:
-            auth.login(request, user)
+            login(request, user)
             return redirect('home')
         else:
             messages.error(request, 'username or password is not correct')

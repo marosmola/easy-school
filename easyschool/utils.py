@@ -24,7 +24,11 @@ MONTHS_CHOICE = (
 
 
 def next_month():
-    month = date.today().month + 1
+    current_month = date.today().month
+    if current_month == 12:
+        month = 1
+    else:
+        month = date.today().month + 1
     year = date.today().year
     day = 1
     return date(year, month, day)
