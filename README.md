@@ -1,4 +1,5 @@
 # Easy School
+[![codecov](https://codecov.io/gh/marosmola/easy-school/branch/master/graph/badge.svg?token=V1ARD78WEL)](https://codecov.io/gh/marosmola/easy-school)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
